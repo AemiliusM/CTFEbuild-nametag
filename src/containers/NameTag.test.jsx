@@ -8,7 +8,7 @@ describe('NameTag container', () => {
     render(<NameTag />);
 
     const nameInput = await screen.findByRole('textbox', {
-      name: 'personName',
+      name: 'name',
     });
     userEvent.type(nameInput, '{selectall}{del}Ruby');
 
